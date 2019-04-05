@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Subway Surfer</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="subwaysurfer.css" type="text/css">
+  </head>
+  <body style="align-content: center;">
+  <div class="container">
+    <div class="text-center">
+      <br><button type="button" id = "score" class="btn btn-primary btn-lg" >Score: 0</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" id = "coincollected" class="btn btn-primary btn-lg" >Coin: 0</button><br><br>
+    </div>
+    <div id="canvasDiv">
+      <canvas id="glcanvas" width="1000" height="700"></canvas>
+    </div>
+  </div>  
+  <audio src = './sound.mp3' id = "music" loop></audio>
+  <audio src = './crash.mp3' id = "crash"></audio>
+  </body>
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./gl-matrix.js"></script>
+  <script src="./cubeprime.js"></script>
+  <script src="./coin.js"></script>
+  <script src="./player.js"></script>
+  <script src="./train.js"></script>
+  <script src="./bounding_box.js"></script>
+  <script src="./mousetrap.min.js"></script>
+  <script src="./loadTexture.js"></script>
+  <script src="./main.js"></script>
+</html>
